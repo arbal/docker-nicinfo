@@ -1,11 +1,11 @@
 .PHONY: image
 image: Dockerfile
-	docker build --tag nicwaller/nicinfo:latest .
+	docker build --tag arbal/nicinfo:latest .
 
 .PHONY: run
 run: image
-	docker run --rm -t nicwaller/nicinfo:latest
+	docker run --rm -t arbal/nicinfo:latest
 
 .PHONY: push
 push: image
-	docker push nicwaller/nicinfo:latest
+	docker push arbal/nicinfo:latest
