@@ -3,16 +3,16 @@ Query RDAP with nicinfo
 
 Help
 
-`docker run nicinfo --help`
+`docker run arbal/nicinfo --help`
 
 Regular output
 
-`docker run nicinfo whatis.health`
+`docker run arbal/nicinfo whatis.health`
 
 JSON output
 
-`docker run nicinfo --json -Q whatis.health`
+`docker run arbal/nicinfo --json -Q whatis.health`
 
 JSON via jq
 
-`docker run -t nicinfo --json -Q whatis.health | jq .entities[0]`
+`docker run -t arbal/nicinfo --json -Q whatis.health | jq .entities[0]`
